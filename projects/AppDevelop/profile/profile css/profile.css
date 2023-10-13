@@ -1,0 +1,211 @@
+@charset "UTF-8";
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+    border-radius: 25px 25px 25px 25px;
+}
+a{
+  text-decoration-line: none;
+}
+#container{
+    width: 100%;
+    height: 100vh;background: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index:10000 ;
+
+}
+#page_cover{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #59C173;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #5D26C1, #a17fe0, #59C173);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #5D26C1, #a17fe0, #59C173);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+}
+
+#profile_box{
+    width: 300px;
+    height: auto;
+    background-color: white;
+    box-shadow: 0px 0px 10px #ccc;
+    border-radius: 15px;
+    padding: 50px 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    
+}
+
+#profile_pic{
+   width: 150px;
+   height: 150px;
+   border-radius: 50%;
+   border: 5px solid white;
+   box-shadow: 0px 0px 10px #ccc;
+   position: relative;
+   overflow: hidden;
+
+}
+
+#profile_icon{
+    font-size: 120px;
+    color: #ccc;
+   position: absolute;
+   top: 25px;
+   left: 50%;
+   transform: translate(-50%);
+}
+
+#profile_upload{
+    width: 140px;
+    height: 140px;
+    position: absolute;
+    left: 0;
+    top: 0;
+   border-radius: 50%;
+   opacity: 0;
+}
+
+#upload_name{
+    font-size: 20px;
+    color: gray;
+    margin-top: 10px;
+}
+
+#next{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    font-weight: bold;
+    font-size: 16px;
+    background: #C6FFDD;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: rgb(8, 8, 8);
+    outline: none;
+    cursor: pointer;
+    margin-top: 20px;
+    display: none;
+}
+
+body{
+    background: #59C173;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #5D26C1, #a17fe0, #59C173);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #5D26C1, #a17fe0, #59C173);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#profile_header{
+    width: 100%;
+    height: 150px;
+    background-image: url(../images/pexels-harrison-haines-3536278.jpg);
+    background-size: cover;
+    background-position: center;
+    
+}
+
+#profile_picture{
+    width: 150px;
+    height: 150px;
+    background-color: #f7797d;
+    border-radius: 50%;
+    border: 5px solid white;
+    box-shadow:0px 0px 10px #ccc;
+    position: absolute;
+    top: 75px;
+    left:50% ;
+    transform: translate(-50%);
+
+}
+
+#profile_username{
+    text-align: center;
+    margin-top: 80px;
+   
+}
+
+#app{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+@media(max-width:575px){
+    #app{
+        flex-direction: column;
+        height: 100%;
+    }
+}
+
+#player,#contect,#logout{
+    width: 180px;
+    height: 150px;
+    background-color: white;
+    margin: 20px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+#player:hover,#contect:hover,#logout:hover{
+    width: 200px;
+    height: 170px;
+    box-shadow: 0px 0px 15px #ccc;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#contect i,#player i,#logout i{
+    font-size:45px;
+    color: #f7797d;
+}
+
+#contect p,#player p,#logout p{
+    font-size: 25px;
+    color: #f7797d;
+    margin-top: 8px;
+}
+
+#profile_footer{
+    width: 100%;
+    height: 70px;
+    background-color: #f7797d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#profile_footer p{
+   color: white;
+   font-size: 20px;
+}
+
+
+ 
